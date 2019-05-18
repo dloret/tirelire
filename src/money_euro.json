@@ -7,11 +7,11 @@
   {"id": 6, "unit": "centime", "value": 50, "type": "coin", "image": "/assets/images/50_cent_euro.jpg"},
   {"id": 7, "unit": "euro", "value": 1, "type": "coin", "image": "/assets/images/01_euro.jpg"},
   {"id": 8, "unit": "euro", "value": 2, "type": "coin", "image": "/assets/images/02_euro.jpg"},
-  {"id": 9, "unit": "euro", "value": 5, "type": "bank note", "image": "/assets/images/05_euro.jpg"},
-  {"id": 10, "unit": "euro", "value": 10, "type": "bank note", "image": "/assets/images/10_euro.jpg"},
-  {"id": 11, "unit": "euro", "value": 20, "type": "bank note", "image": "/assets/images/20_euro.jpg"},
-  {"id": 12, "unit": "euro", "value": 50, "type": "bank note", "image": "/assets/images/50_euro.jpg"},
-  {"id": 13, "unit": "euro", "value": 100, "type": "bank note", "image": "/assets/images/100_euro.jpg"},
-  {"id": 14, "unit": "euro", "value": 200, "type": "bank note", "image": "/assets/images/200_euro.jpg"},
-  {"id": 15, "unit": "euro", "value": 500, "type": "bank note", "image": "/assets/images/500_euro.jpg"}
+  {"id": 9, "unit": "euro", "value": 5, "type": "bank-note", "image": "/assets/images/05_euro.jpg"},
+  {"id": 10, "unit": "euro", "value": 10, "type": "bank-note", "image": "/assets/images/10_euro.jpg"},
+  {"id": 11, "unit": "euro", "value": 20, "type": "bank-note", "image": "/assets/images/20_euro.jpg"},
+  {"id": 12, "unit": "euro", "value": 50, "type": "bank-note", "image": "/assets/images/50_euro.jpg"},
+  {"id": 13, "unit": "euro", "value": 100, "type": "bank-note", "image": "/assets/images/100_euro.jpg"},
+  {"id": 14, "unit": "euro", "value": 200, "type": "bank-note", "image": "/assets/images/200_euro.jpg"},
+  {"id": 15, "unit": "euro", "value": 500, "type": "bank-note", "image": "/assets/images/500_euro.jpg"}
 ]

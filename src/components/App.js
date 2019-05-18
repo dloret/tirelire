@@ -2,7 +2,7 @@ import React from 'react';
 
 import Currency from './Currency';
 import money from '../money_euro';
-import '../styles/App.css';
+import '../styles/App.scss';
 
 function App() {
   return (

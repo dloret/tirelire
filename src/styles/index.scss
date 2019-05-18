@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat&display=swap');
+
+/* CSS reset */
+html {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* 
+* HEADER 
+*/
+header {
+  position: sticky;
+  top: 0;
+}
+h1 {
+  font-family: "Fredoka One", sans-serif;
+}
