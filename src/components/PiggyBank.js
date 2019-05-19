@@ -48,8 +48,11 @@ export default class PiggyBank extends React.Component {
   }
 
   deleteState = () => {
-    localStorage.removeItem('tirelire');
-    window.location.reload();
+    let reset = window.confirm("Veux-tu vraiment effacer tout le contenu de ta tirelire ?\nElle affichera 0 euro.");
+    if (reset) {
+      localStorage.removeItem('tirelire');
+      window.location.reload();
+    }
   }
 
   render() {
@@ -58,8 +61,7 @@ export default class PiggyBank extends React.Component {
         <header>
           <h1>Ma tirelire</h1>
           <img src={piggyBank} alt="piggy bank"/>
-          {console.log(this.state.currentBalance, typeof this.state.currentBalance)}
-          <p>Ta tirelire contient actuellement <strong>{this.state.currentBalance.toFixed(2)} €</strong> !</p>
+          <p>Ta tirelire contient <strong>{this.state.currentBalance.toFixed(2)} €</strong> !</p>
           <button onClick={this.deleteState}>Effacer</button>
         </header>
         <main>

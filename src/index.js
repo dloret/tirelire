@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.scss';
+import './style/index.scss';
 import PiggyBank from './components/PiggyBank';
 import * as serviceWorker from './serviceWorker';
 

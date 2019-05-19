@@ -1,0 +1,114 @@
+@import './mixins';
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat&display=swap');
+
+/* CSS reset */
+html {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* 
+* HEADER 
+*/
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+
+  h1 {
+    font-family: "Fredoka One", sans-serif;
+  }
+
+  button {
+    @include button(red, white, 'large');
+  }
+}
+
+/*
+* MAIN CONTENT
+*/
+article {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr auto auto;
+  justify-items: center;
+  align-items: center;
+
+  input {
+    border-radius: 5px;
+    width: 54px;
+    height: 40px;
+  }
+
+  p {
+    grid-column: 1 / 5; 
+  }
+
+  button.add {
+    @include button(blue, white, 'small');
+  }
+
+  button.sub {
+    @include button(red, white, 'small');
+  }
+}
+
+.centime1 img, .centime2 img, .centime5 img {
+  height: 40px;
+}
+
+.centime10 img, .centime20 img, .centime50 img {
+  height: 60px;
+}
+
+.euro1 img {
+  height: 70px;
+}
+
+.euro2 img {
+  height: 80px;
+}
+
+.bank-note img {
+  height: 80px;
+}
+
+@media screen and(min-width: 768px) {
+  header {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr auto auto;
+
+    h1 {
+      grid-column: 1 / 4;
+      justify-self: center;
+    }
+
+    img {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    p {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin-right: 60px;
+      font-size: 1.7em;
+    }
+
+    button {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      width: 10vw;
+      height: 7vw;
+    }
+  }
+}

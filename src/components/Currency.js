@@ -8,6 +8,8 @@ export default class Currency extends React.Component {
     };
   }
 
+  handleFocus = e => this.setState({inputValue: ''})
+
   handleChange = e => {
     let userValue = e.target.value;
     if (userValue < 0) {
@@ -46,7 +48,6 @@ export default class Currency extends React.Component {
         <img
           src={process.env.PUBLIC_URL + image}
           alt={value + " " + unit}
-          style={{ maxHeight: "70px" }}
         />
         <input
           type="number"
@@ -55,9 +56,10 @@ export default class Currency extends React.Component {
           name={value + "-" + unit}
           value={this.state.inputValue}
           onChange={this.handleChange}
+          onFocus={this.handleFocus}
         />
-        <button onClick={this.handleAddClick}>+</button>
-        <button onClick={this.handleSubstractClick}>-</button>
+        <button onClick={this.handleAddClick} className="add">+</button>
+        <button onClick={this.handleSubstractClick} className="sub">-</button>
         <p>{unit === 'centime' ?
           `${this.state.inputValue} x ${value} ${unit}(s) = ${this.state.inputValue * value / 100} euro(s)` :
           `${this.state.inputValue} x ${value} ${unit}(s) = ${this.state.inputValue * value} euro(s)`
