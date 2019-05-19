@@ -111,4 +111,52 @@ article {
       height: 7vw;
     }
   }
+
+  article {
+    display: inline-grid;
+    width: 40vw;
+    margin-left: 40px;
+
+    button.add, button.sub {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+}
+
+@media screen and(min-width: 1024px) {
+  header {
+    p {
+      margin-right: 200px;
+    }
+    button {
+      width: 7vw;
+      height: 5vw;
+    }
+  }
+}
+
+@media screen and(min-width: 1280px) {
+  header {
+    p {
+      margin-right: 33vw;
+    }
+
+    button {
+      width: 5vw;
+      height: 3vw;
+    }
+  }
+
+  main {
+    margin-left: 7%;;
+  }
+  article {
+    width: 25vw;
+
+    button.add, button.sub {
+      width: 3vw;
+      height: 3vw;;
+    }
+  }
 }
