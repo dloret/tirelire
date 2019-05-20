@@ -1,6 +1,7 @@
 {
   "name": "tirelire",
   "version": "0.1.0",
+  "homepage": "http://2d2h.net/helios/tirelire",
   "private": true,
   "dependencies": {
     "node-sass": "^4.12.0",
